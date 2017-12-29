@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+@import url("navi.css");
+@import url("forms.css");
+@import url("tables.css");
+@import url("featured_slide.css");
+
+body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#605B5B; background-color:#FFFFFF;}
+
+.clear{clear:both;}
+br.clear{clear:both; margin-top:-15px;}
+
+a{outline:none; text-decoration:none; color:#a94f00;}
+
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+/* ----------------------------------------------Wrapper------------------------------------- */
+
+div.wrapper{display:block; width:100%; margin:0; text-align:left;}
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0 0 15px 0; padding:0; font-size:50px; font-weight:normal; line-height:normal;}
+.col1, .col1 a{color:#AAAAAA; background-color:#FFFFFF;}
+.col2{color:#FFFFFF ; background-color:#01613A; }
+.col3{color:#666666; background-color:#f3aa4a; padding:20px 0;}
+
+/* ----------------------------------------------Generalise------------------------------------- */
+
+#header, #topbar, #breadcrumb, #featured_intro, #latest, .container, #footer {display:block; position:relative; width:89%; margin:0 auto;}
+
+/* ----------------------------------------------Header------------------------------------- */
+
+#header{padding:2px 0 20px 0;}
+#header .fl_left{display:block; float:left; margin-top:7px; overflow:hidden;}
+#header .fl_right{display:block; float:right; width:468px; height:60px; margin-top:21px; overflow:hidden;}
+#header h1, #header p, #header ul{margin:0; padding:0; list-style:none; line-height:normal;}
+#header .fl_left p{margin-top:5px;}
+
+
+/*-----------------------------------------------Informacion---------------------------------*/
+
+#informacion{font-size:20px; text-align:right; }
+
+/* ----------------------------------------------Menu------------------------------------- */
+
+#topbar{padding:20px 0; z-index:1000;}
+#topbar #search{display:block; float:right; margin:0; padding:0; overflow:hidden;}
+
+/* ----------------------------------------------Campo despues de la foto------------------------------------- */
+
+#texto_inferior{font-size:20px; margin-left:5%; line-height:30px;}
+#texto_inferior p{color:#01613a}
+
+/* ----------------------------------------------Homepage Latest------------------------------------- */
+
+#latest{padding:30px 0;}
+#latest ul, #latest p{margin:0; padding:0; list-style:none; display:inline;}
+#latest h2{margin:0 0 15px 0; padding:0 0 8px 0; font-size:20px; font-weight:normal; }
+#latest li{display:block; float:left; width:300px; margin:0 30px 0 0; padding:0;}
+#latest li p.imgholder{display:block; width:290px; height:100px; margin:0 0 15px 0;  }
+#latest a{font-weight:bold;}
+
+/* ----------------------------------------------Footer------------------------------------- */
+
+#footer{padding:20px 0; }
+#footer h2, #footer p, #footer ul, #footer a{margin:0; padding:0; font-weight:normal; list-style:none; line-height:normal;}
+#footer p{line-height:1.6em;}
+#footer h2{color:#666666; background-color:#E9E9E9; font-size:18px; font-weight:normal; margin-bottom:20px;}
+#footer li{margin-bottom:5px;}
+#footer .footbox{display:block;  float:left;width:32%; margin:0 22px 0 0; padding:0;}
+#footer .last{display:block; margin:0;width:30%; float:left;}
+
+
+/*-----------------------------------------------datos contacto---------------------------------*/
+
+#datos{margin-left:10% ;width:30%; float:left; display:block; padding:20px 0; line-height:20px; font-size:15px}
+#datos h1{color:#01613a}
+
+/*-----------------------------------------------Formulario---------------------------------*/
+#formulario{margin-left:5%; width:50%; float:left; display:block; padding:20px 0;}
+
+
+/*-----------------------------------------------Informacion---------------------------------*/
+
+#informacion{margin-left:10% ;width:30%; float:left; display:block; padding:20px 0; line-height:20px; font-size:15px ;text-align:left}
+
+/*-----------------------------------------------Localizacion---------------------------------*/
+#localizacion{margin-left:2%; width:50%; float:left; display:block; padding:20px 0;}
+
+
+/*-----------------------------------------------Leyenda---------------------------------------- */
+
+#leyenda1{float:left; display:block; width:40%;margin-left:10% ;padding:20px 0;}
+#leyenda1 ul{list-style:none;}
+#leyenda1 h2{color:#01613a}
+#leyenda1 li{font-size:20px;line-height:30px;}
+#leyenda2{float:left; display:block; width:40%;margin-left:10% ;padding:20px 0; line-height:30px;  }
+#leyenda2 h2{color:#01613a}
+/* ----------------------------------------------Copyright------------------------------------- */
+
+#copyright{margin-left:15px; padding:20px 0;width:100%;float:left;}
+#copyright p{margin:0;padding:0;}
