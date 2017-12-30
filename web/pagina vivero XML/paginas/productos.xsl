@@ -1,5 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : productos.xsl
+    Created on : December 30, 2017, 1:17 AM
+    Author     : scuev
+    Description:
+        Purpose of transformation follows.
+-->
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:output method="html"/>
+
+    <!-- TODO customize transformation rules 
+         syntax recommendation http://www.w3.org/TR/xslt 
+    -->
+    <xsl:template match="/">
+        <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 <title>Vivero UAH | Productos </title>
@@ -21,11 +37,11 @@
     <div id="topnav">
       <ul>
         <li>
-          <div align="center"><a href="../index.html" class="Estilo1">Inicio</a></div>
+          <div align="center"><a href="../index.xml" class="Estilo1">Inicio</a></div>
         </li>
-        <li color="#564647"><a href="productos.html">Productos</a></li>
-        <li><a href="localizacion.html">DÛnde estamos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li color="#564647"><a href="productos.xml">Productos</a></li>
+        <li><a href="localizacion.xml">D√≥nde estamos</a></li>
+        <li><a href="contacto.xml">Contacto</a></li>
       </ul>
     </div>
     <br class="clear" />
@@ -38,8 +54,7 @@
       <img src="../imagenes/Carrusel1.jpg" alt="" />
     </div>
   </div>
-</div>
- <!-------------------------------------------------- 1∫ Fila productos ----------------------------------------------> 
+ <!-- 1¬∫ Fila productos --> 
  
 <div class="wrapper col4">
   <div class="fl_right" id="latest">
@@ -47,42 +62,42 @@
       <li>
         <h2 align="center"><a href="https://es.wikipedia.org/wiki/Madera">Madera</a></h2>
         <p class="imgholder"><img src="../imagenes/madera.jpg" alt="" /></p>
-        <p>Complementos de Madera tratada y tropical, Borduras, celosÌas, jardineras, vallas, tarimas, casetas, etc...</p>
+        <p>Complementos de Madera tratada y tropical, Borduras, celos√≠as, jardineras, vallas, tarimas, casetas, etc...</p>
       </li>
       <li>
         <h2 align="center"><a href="https://es.wikipedia.org/wiki/Abono">Abonos y sustratos</a></h2>
         <p class="imgholder"><img src="../imagenes/abonos.jpg" alt="" /></p>
-        <p>Disponemos de la mejor seleccion de sustratos del mercado. Abonos quÌmicos de liberaciÛn r·pida y lenta, lÌquidos y sÛlidos. 
-		Abonos org·nicos liofilizados para cÈsped y plantas, exentos de malas hierbas </p>
+        <p>Disponemos de la mejor seleccion de sustratos del mercado. Abonos qu√≠micos de liberaci√≥n r√°pida y lenta, l√≠quidos y s√≥lidos. 
+		Abonos org√°nicos liofilizados para c√©sped y plantas, exentos de malas hierbas </p>
       </li>
       <li class="last">
-        <h2 align="center"><a href="https://es.wikipedia.org/wiki/M·rmol">Marmoles</a></h2>
+        <h2 align="center"><a href="https://es.wikipedia.org/wiki/M√°rmol">Marmoles</a></h2>
         <p class="imgholder"><img src="../imagenes/marmoles.jpg" alt="" /></p>
-        <p>Marmoles triturados, cantos rodados, bolos, arena de rÌo, tierra volc·nica, arlita, etc. 
-		TambiÈn disponemos de tela anti-hierba para colocar debajo de estos materiales.</p>
+        <p>Marmoles triturados, cantos rodados, bolos, arena de r√≠o, tierra volc√°nica, arlita, etc. 
+		Tambi√©n disponemos de tela anti-hierba para colocar debajo de estos materiales.</p>
       </li>
     </ul>
     <br class="clear" />
   </div>
- <!-------------------------------------------------- 2∫ Fila productos ----------------------------------------------> 
+ <!-- 2¬∫ Fila productos --> 
   <div class="fl_right" id="latest">
     <ul>
       <li>
         <h2 align="center"><a href="https://es.wikipedia.org/wiki/Semilla">Semillas</a></h2>
         <p class="imgholder"><img src="../imagenes/semilla.jpg" alt="" /></p>
-        <p>Con el asesoramiento de cuatro Ingenieros TÈcnicos AgrÌcolas para aconsejarle en el correcto semillado y mantenimiento de su cÈsped.</p>
+        <p>Con el asesoramiento de cuatro Ingenieros T√©cnicos Agr√≠colas para aconsejarle en el correcto semillado y mantenimiento de su c√©sped.</p>
       </li>
 	  
       <li>
         <h2 align="center"><a href="https://es.wikipedia.org/wiki/Jardinera_(jardiner%C3%ADa)">Jardineras</a></h2>
         <p class="imgholder"><img src="../imagenes/jardinera.jpg" alt="" /></p>
-        <p>M˙ltiples tamaÒos y formas de jardineras y macetas en diversos materiales como terracota, barro, gres, cer·mica, piedra artificial, 
-		sintÈtica madera, fibra de vidrio, y latÛn. </p>
+        <p>M√∫ltiples tama√±os y formas de jardineras y macetas en diversos materiales como terracota, barro, gres, cer√°mica, piedra artificial, 
+		sint√©tica madera, fibra de vidrio, y lat√≥n. </p>
       </li>
       <li class="last">
         <h2 align="center"><a href="https://es.wikipedia.org/wiki/Herramienta">Herramientas</a></h2>
         <p class="imgholder"><img src="../imagenes/poda.jpg" alt="" /></p>
-        <p>Disponemos de numerosas herramientas para el cuidado y cultivo de cualquier tipo de planta.<br>
+        <p>Disponemos de numerosas herramientas para el cuidado y cultivo de cualquier tipo de planta.<br/>
 		Como por ejemplo alicates, tijeras de corte,motosierras...etc</p>
       </li>
     </ul>
@@ -90,25 +105,25 @@
   </div>
 </div>
 
-<!--------------------------------------------------Leyenda ---------------------------------------------------->
-<hr width = "90%" color="#008F54";>
+<!-- Leyenda -->
+<hr width = "90%" color="#008F54"/>
 <div id="leyenda1">
 	<h2>Vivero UAH</h2>
 		<ul>
-			<li><a href="../index.html">Inicio</li>
-			<li><a href="productos.html">Productos</li>
-			<li><a href="localizacion.html">DÛnde estamos</li>
-			<li><a href="contacto.html">Contacto </a></li>
+			<li><a href="../index.xml">Inicio</a></li>
+			<li><a href="productos.xml">Productos</a></li>
+			<li><a href="localizacion.xml">D√≥nde estamos</a></li>
+			<li><a href="contacto.xml">Contacto </a></li>
 		</ul>
 </div>
 
 <div id="leyenda2">
 	<h2>Contacto</h2>
-		<p class="last">Carretera de Barcelona- AutovÌa A2 Km. 16,500 sentido Madrid<br />
+		<p class="last">Carretera de Barcelona- Autov√≠a A2 Km. 16,500 sentido Madrid<br />
 			 San Fernando de Hernares, Madrid, 2883o<br />
 			 tel: +34 91 555 55 55<br />
 			 fax: +34 91 555 55 55<br />
-			 Correo electrÛnico: <a href="mailto:info@viverosUAH.com">info@viveroUAH.com</a><br />
+			 Correo electr√≥nico: <a href="mailto:info@viverosUAH.com">info@viveroUAH.com</a><br />
 			 <iframe width="200" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.476855108628!2d-3.3451889999999795!3d40.50895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424bfc76f087f1%3A0xced3a1e98249a30f!2sUAH+Campus+Cient%C3%ADfico-Tecnol%C3%B3gico+(Externo)!5e0!3m2!1ses!2ses!4v1428406958641"></iframe>
 					 
 		</p> 
@@ -116,3 +131,6 @@
 <!-- ####################################################################################################### -->
 </body>
 </html>
+    </xsl:template>
+
+</xsl:stylesheet>

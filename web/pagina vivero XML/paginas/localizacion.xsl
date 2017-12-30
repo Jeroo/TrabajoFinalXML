@@ -1,5 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : localizacion.xsl
+    Created on : December 30, 2017, 1:15 AM
+    Author     : scuev
+    Description:
+        Purpose of transformation follows.
+-->
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:output method="html"/>
+
+    <!-- TODO customize transformation rules 
+         syntax recommendation http://www.w3.org/TR/xslt 
+    -->
+    <xsl:template match="/">
+       <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 <title>Vivero UAH | Donde estamos</title>
@@ -22,11 +38,11 @@
     <div id="topnav">
       <ul>
         <li >
-          <div align="center"><a href="../index.html" class="Estilo1">Inicio</a></div>
+          <div align="center"><a href="../index.xml" class="Estilo1">Inicio</a></div>
         </li>
-        <li color="#564647"><a href="productos.html">Productos</a></li>
-        <li><a href="localizacion.html">D髇de estamos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li color="#564647"><a href="productos.xml">Productos</a></li>
+        <li><a href="localizacion.xml">D贸nde estamos</a></li>
+        <li><a href="contacto.xml">Contacto</a></li>
       </ul>
     </div>
     <br class="clear" />
@@ -38,23 +54,23 @@
       <img src="../imagenes/Carrusel3.jpg" alt="" />
     </div>
   </div>
-</div>
+
 
 <!-- ####################################################################################################### -->
 <div id="informacion">
 	<h1>Encuentrenos: </h1>
-	<br>
-	<strong>Centro de jardiner韆 y exposici髇</strong>
-	<p>Carretera de Barcelona- Autov韆 A2 Km. 16,500 sentido Madrid<br />
+	<br/>
+	<strong>Centro de jardiner铆a y exposici贸n</strong>
+	<p>Carretera de Barcelona- Autov铆a A2 Km. 16,500 sentido Madrid<br />
 				 San Fernando de Hernares, Madrid, 28830
 	</p>
 	<p>
-	<strong>Informaci髇 de contacto</strong>
+	<strong>Informaci贸n de contacto</strong>
 	</p>
 	<p>
 		fax : +34 91 555 55 55 <br /><br />
 		
-		Correo electr髇ico: <a href="mailto:info@viverosUAH.com">info@viveroUAH.com</a><br />
+		Correo electr贸nico: <a href="mailto:info@viverosUAH.com">info@viveroUAH.com</a><br />
 		
 	</p>
 	
@@ -69,15 +85,15 @@
 </div>
 
 <!-- ####################################################################################################### -->
-<hr width = "90%" color="#008F54";>
+<hr width = "90%" color="#008F54"/>
 
 <div id="leyenda1">
 	<h2>Vivero UAH</h2>
 		<ul>
-			<li><a href="../index.html">Inicio</li>
-			<li><a href="productos.html">Productos</li>
-			<li><a href="localizacion.html">D髇de estamos</li>
-			<li><a href="contacto.html">Contacto </a></li>
+			<li><a href="../index.xml">Inicio</a></li>
+			<li><a href="productos.xml">Productos</a></li>
+			<li><a href="localizacion.xml">D贸nde estamos</a></li>
+			<li><a href="contacto.xml">Contacto </a></li>
 		</ul>
 </div>
 
@@ -87,10 +103,13 @@
 			 Alcala de Henares, Madrid, 2883o<br />
 			 tel: +34 91 555 55 55<br />
 			 fax: +34 91 555 55 55<br />
-			 Correo electr髇ico: <a href="mailto:info@viverosUAH.com">info@viveroUAH.com</a><br />
+			 Correo electr贸nico: <a href="mailto:info@viverosUAH.com">info@viveroUAH.com</a><br />
 			 <iframe width="200" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.476855108628!2d-3.3451889999999795!3d40.50895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424bfc76f087f1%3A0xced3a1e98249a30f!2sUAH+Campus+Cient%C3%ADfico-Tecnol%C3%B3gico+(Externo)!5e0!3m2!1ses!2ses!4v1428406958641"></iframe>					 
 		</p> 
 </div>
 <!-- ####################################################################################################### -->
 </body>
 </html>
+    </xsl:template>
+
+</xsl:stylesheet>
