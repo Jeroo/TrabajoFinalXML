@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-    Document   : index.xsl
-    Created on : December 30, 2017, 12:58 AM
-    Author     : scuev
-    Description:
-        Purpose of transformation follows.
--->
-
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
 
@@ -71,7 +63,7 @@
   </div>
 
 <!-- ####################################################################################################### -->
-			 <!-- Leyenda --> 
+        <!-- Leyenda --> 
         <hr class="clsHr"/>          
     
         <div id="leyenda1">
