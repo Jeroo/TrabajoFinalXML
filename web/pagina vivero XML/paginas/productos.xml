@@ -1,11 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <?xml-stylesheet  href="productos.xsl" type="text/xsl"?>
 
-<root>
-    
-</root>
+<paginaProductos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="productos.xsd">
+     <imagenes>
+        <imagenCabecera imagenUri="../imagenes/Cabecera.jpg"/> 
+        <imagenCarruse imagenUri="../imagenes/Carrusel1.jpg"/>       
+    </imagenes> 
+    <productos>
+        <producto>            
+            <nombre urlNombre="https://es.wikipedia.org/wiki/Madera">Madera</nombre>
+            <imagen urlImg="../imagenes/madera.jpg"/>
+            <descripcion>
+                Complementos de Madera tratada y tropical, Borduras, celosías, jardineras, vallas, tarimas, casetas, etc...
+            </descripcion>
+        </producto>
+        <producto>            
+            <nombre urlNombre="https://es.wikipedia.org/wiki/Abono">Abonos y sustratos</nombre>
+            <imagen urlImg="../imagenes/abonos.jpg"/>
+            <descripcion>
+                Disponemos de la mejor seleccion de sustratos del mercado. Abonos químicos de liberación rápida y lenta, líquidos y sólidos. 
+		Abonos orgánicos liofilizados para césped y plantas, exentos de malas hierbas
+            </descripcion>
+        </producto>
+        <producto>            
+            <nombre urlNombre="https://es.wikipedia.org/wiki/Mármol">Marmoles</nombre>
+            <imagen urlImg="../imagenes/marmoles.jpg"/>
+            <descripcion>
+                Marmoles triturados, cantos rodados, bolos, arena de río, tierra volcánica, arlita, etc. 
+		También disponemos de tela anti-hierba para colocar debajo de estos materiales.
+            </descripcion>
+        </producto>
+        <producto>            
+            <nombre urlNombre="https://es.wikipedia.org/wiki/Semilla">Semillas</nombre>
+            <imagen urlImg="../imagenes/semilla.jpg"/>
+            <descripcion>
+                Con el asesoramiento de cuatro Ingenieros Técnicos Agrícolas para aconsejarle en el correcto semillado y mantenimiento de su césped.
+            </descripcion>
+        </producto>
+        <producto>            
+            <nombre urlNombre="https://es.wikipedia.org/wiki/Jardinera_(jardiner%C3%ADa)">Jardineras</nombre>
+            <imagen urlImg="../imagenes/jardinera.jpg"/>
+            <descripcion>
+                Múltiples tamaños y formas de jardineras y macetas en diversos materiales como terracota, barro, gres, cerámica, piedra artificial, sintética madera, fibra de vidrio, y latón.
+            </descripcion>
+        </producto>
+        <producto>            
+            <nombre urlNombre="https://es.wikipedia.org/wiki/Herramienta">Herramientas</nombre>
+            <imagen urlImg="../imagenes/poda.jpg"/>
+            <descripcion>
+                Disponemos de numerosas herramientas para el cuidado y cultivo de cualquier tipo de planta.
+                Como por ejemplo alicates, tijeras de corte,motosierras...etc
+            </descripcion>
+        </producto>
+    </productos>
+    <dirección>
+      <nombreLugar>
+        Centro de jardinería y exposición
+      </nombreLugar>
+      <calle>
+          <nombre>Carretera de Barcelona</nombre>
+          <número>Km. 16,500</número>
+          <referencia>Autovía A2 Km.16 sentido Madrid</referencia>
+          <referencia2>Autovía A2 Km. 16,500 sentido Madrid</referencia2>
+      </calle>
+      <sector>San Fernando de Henares</sector>
+      <localidad>Madrid</localidad>      
+      <códigoPostal>28830</códigoPostal>
+      <país>
+          España
+      </país>
+    </dirección>  
+    <teléfono>
+        +34 91 555 55 55
+    </teléfono>
+    <fax>
+     +34 91 555 55 55 
+    </fax> 
+    <correosElectrónicos>
+        <correoElectronicoCentroPagina>
+            info@viverospena.com
+        </correoElectronicoCentroPagina>
+         <correoElectronicoPiePagina>
+            info@viveroUAH.com
+        </correoElectronicoPiePagina>     
+    </correosElectrónicos> 
+    <iframeUrl url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.476855108628!2d-3.3451889999999795!3d40.50895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424bfc76f087f1%3A0xced3a1e98249a30f!2sUAH+Campus+Cient%C3%ADfico-Tecnol%C3%B3gico+(Externo)!5e0!3m2!1ses!2ses!4v1428406958641"/>
+  
+</paginaProductos>
