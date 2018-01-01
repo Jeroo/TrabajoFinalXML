@@ -26,7 +26,12 @@
 <div class="wrapper col1">
   <div id="header">
       <p align="left">
-		<img src="imagenes/Cabecera.jpg" alt="" width="100%" height="100%" /> 
+                <img>
+                    <xsl:attribute name="src"><xsl:value-of select="paginaIndex/imagenes/imagenCabecera/@imagenUri"/></xsl:attribute>
+                    <xsl:attribute name="alt"></xsl:attribute>                    
+                    <xsl:attribute name="width">100%</xsl:attribute>
+                    <xsl:attribute name="height">100%</xsl:attribute>
+                </img>
 	  </p>
 	  	  
  </div>
@@ -38,7 +43,8 @@
     <div id="topnav">
       <ul>
         <li>
-          <div align="center"><a href="index.xml" class="Estilo1">Inicio</a></div>
+          <div align="center"><a href="index.xml" class="Estilo1">Inicio</a>
+          </div>
         </li>
         <li color="#564647"><a href="paginas/productos.xml">Productos</a></li>
         <li><a href="paginas/localizacion.xml">Dónde estamos</a></li>
@@ -51,41 +57,57 @@
 <!-- ####################################################################################################### -->
 <div class="wrapper col3">
   <div id="featured_slide">
-
-      <img src="imagenes/gifplanta.gif" alt="" />
+      <img>
+        <xsl:attribute name="src"><xsl:value-of select="paginaIndex/imagenes/imagenCarruse/@imagenUri"/></xsl:attribute>
+        <xsl:attribute name="alt"></xsl:attribute>   
+      </img>
 
     </div>
   </div>
   <div id="texto_inferior">
-      <p>Viveros es una empresa familiar creada en 1889, disponemos de 15.000m2 de exposición en nuestro centro de jardinería de Madrid.
-	  Contamos con una sólida y dilatada experiencia en este sector, lo que nos permite poner a disposición de nuestros clientes un amplio surtido de especies
-	  vegetales.</p>
+      <p>
+          <xsl:value-of select="paginaIndex/descripcionCentral"/>
+      </p>
   </div>
 
-
 <!-- ####################################################################################################### -->
-				<hr width = "90%" color="#008F54"/>
-<div id="leyenda1">
-	<h2>Vivero UAH</h2>
-		<ul>
-			<li><a href="index.xml">Inicio</a></li>
-			<li><a href="paginas/productos.xml">Productos</a></li>
-			<li><a href="paginas/localizacion.xml">Dónde estamos</a></li>
-			<li><a href="paginas/contacto.xml">Contacto </a></li>
-		</ul>
-</div>
+			 <!-- Leyenda --> 
+        <hr class="clsHr"/>          
+    
+        <div id="leyenda1">
+                <h2>Vivero UAH</h2>
+                        <ul>
+                                <li><a href="index.xml">Inicio</a></li>
+                                <li><a href="paginas/productos.xml">Productos</a></li>
+                                <li><a href="paginas/localizacion.xml">Dónde estamos</a></li>
+                                <li><a href="paginas/contacto.xml">Contacto </a></li>
+                        </ul>
+        </div>
+      
+        <div id="leyenda2">
+                <h2>Contacto</h2>
+                        <p class="last"><xsl:value-of select="paginaIndex/dirección/calle/nombre"/> - <xsl:value-of select="paginaIndex/dirección/calle/referencia2"/><br />
+                                 <xsl:value-of select="paginaIndex/dirección/sector"/>, <xsl:value-of select="paginaIndex/dirección/localidad"/>, <xsl:value-of select="paginaIndex/dirección/códigoPostal"/><br />
+                                 tel: <xsl:value-of select="paginaIndex/teléfono"/><br />
+                                 fax: <xsl:value-of select="paginaIndex/teléfono"/><br />
+                                 Correo electrónico:  <a href="mailto:{paginaIndex/correosElectrónicos/correoElectronicoPiePagina}">
+                                    <xsl:value-of select="paginaIndex/correosElectrónicos/correoElectronicoPiePagina"/>
+                                 </a><br />
 
-<div id="leyenda2">
-	<h2>Contacto</h2>
-		<p class="last">Carretera de Barcelona- Autovía A2 Km. 16,500 sentido Madrid<br />
-			 San Fernando de Hernares, Madrid, 2883o<br />
-			 tel: +34 91 555 55 55<br />
-			 fax: +34 91 555 55 55<br />
-			 Correo electrónico: <a href="mailto:info@viverosUAH.com">info@viveroUAH.com</a><br />
-			 <iframe width="200" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.476855108628!2d-3.3451889999999795!3d40.50895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424bfc76f087f1%3A0xced3a1e98249a30f!2sUAH+Campus+Cient%C3%ADfico-Tecnol%C3%B3gico+(Externo)!5e0!3m2!1ses!2ses!4v1428406958641"></iframe>
-					 
-		</p> 
-</div>
+                                 <iframe width="200" 
+                                         height="250" 
+                                         frameborder="0" 
+                                         scrolling="no" 
+                                         marginheight="0" 
+                                         marginwidth="0">
+                                     <xsl:attribute name="src">
+                                        <xsl:value-of select="paginaIndex/iframeUrl/@url"/>
+                                    </xsl:attribute>
+                                </iframe>
+
+                        </p> 
+        </div>
+        <!-- ####################################################################################################### -->
    
 <!-- ####################################################################################################### -->
 </body>

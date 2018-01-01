@@ -15,101 +15,123 @@
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/">
-       <html xmlns="http://www.w3.org/1999/xhtml">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+        <title>Vivero UAH | Donde estamos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" href="../estilos/layout.css" type="text/css" />
+        </head>
 
-<head>
-<title>Vivero UAH | Donde estamos</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link rel="stylesheet" href="../estilos/layout.css" type="text/css" />
-</head>
+        <body id="top">
+        <div class="wrapper col1">
+          <div id="header">
+              <p align="left">
+                        <img>
+                            <xsl:attribute name="src"><xsl:value-of select="paginaLocalizacion/imagenes/imagenCabecera/@imagenUri"/></xsl:attribute>
+                            <xsl:attribute name="alt"></xsl:attribute>                    
+                            <xsl:attribute name="width">100%</xsl:attribute>
+                            <xsl:attribute name="height">100%</xsl:attribute>
+                        </img>
+                  </p>
 
-<body id="top">
-<div class="wrapper col1">
-  <div id="header">
-      <p align="left">
-		<img src="../imagenes/Cabecera.jpg" alt="" width="100%" height="100%" /> 
-	  </p>
-	  	  
- </div>
-</div>
-<!-- ####################################################################################################### -->
-<div class="wrapper col2">
-  <div id="topbar">
-    <div id="topnav">
-      <ul>
-        <li >
-          <div align="center"><a href="../index.xml" class="Estilo1">Inicio</a></div>
-        </li>
-        <li color="#564647"><a href="productos.xml">Productos</a></li>
-        <li><a href="localizacion.xml">Dónde estamos</a></li>
-        <li><a href="contacto.xml">Contacto</a></li>
-      </ul>
-    </div>
-    <br class="clear" />
-  </div>
-</div>
-<!-- ####################################################################################################### -->
-<div class="wrapper col3">
-  <div id="featured_slide">
-      <img src="../imagenes/Carrusel3.jpg" alt="" />
-    </div>
-  </div>
+         </div>
+        </div>
+        <!-- ####################################################################################################### -->
+        <div class="wrapper col2">
+          <div id="topbar">
+            <div id="topnav">
+              <ul>
+                <li >
+                  <div align="center"><a href="../index.xml" class="Estilo1">Inicio</a></div>
+                </li>
+                <li color="#564647"><a href="productos.xml">Productos</a></li>
+                <li><a href="localizacion.xml">Dónde estamos</a></li>
+                <li><a href="contacto.xml">Contacto</a></li>
+              </ul>
+            </div>
+            <br class="clear" />
+          </div>
+        </div>
+        <!-- ####################################################################################################### -->
+        <div class="wrapper col3">
+          <div id="featured_slide">
+               <img>
+                    <xsl:attribute name="src"><xsl:value-of select="paginaLocalizacion/imagenes/imagenCarruse/@imagenUri"/></xsl:attribute>
+                    <xsl:attribute name="alt"></xsl:attribute>
+               </img>
+            </div>
+          </div>
 
 
-<!-- ####################################################################################################### -->
-<div id="informacion">
-	<h1>Encuentrenos: </h1>
-	<br/>
-	<strong>Centro de jardinería y exposición</strong>
-	<p>Carretera de Barcelona- Autovía A2 Km. 16,500 sentido Madrid<br />
-				 San Fernando de Hernares, Madrid, 28830
-	</p>
-	<p>
-	<strong>Información de contacto</strong>
-	</p>
-	<p>
-		fax : +34 91 555 55 55 <br /><br />
-		
-		Correo electrónico: <a href="mailto:info@viverosUAH.com">info@viveroUAH.com</a><br />
-		
-	</p>
-	
-</div>
+        <!-- ####################################################################################################### -->
+        <div id="informacion">
+                <h1>Encuentrenos: </h1>
+                <br/>
+                <strong><xsl:value-of select="paginaLocalizacion/dirección/nombreLugar"/></strong>
+                          <p><xsl:value-of select="paginaLocalizacion/dirección/calle/nombre"/> - <xsl:value-of select="paginaLocalizacion/dirección/calle/referencia2"/>
+                          <br/>
+                          <xsl:value-of select="paginaLocalizacion/dirección/sector"/>, <xsl:value-of select="paginaLocalizacion/dirección/localidad"/>, <xsl:value-of select="paginaLocalizacion/dirección/códigoPostal"/>
+                          </p>
+                          <p><strong>Información  de contacto:</strong></p>
+                          <p>
+                          fax:<xsl:value-of select="paginaLocalizacion/fax"/>
+                          <br /><br />
+                          Correo electrónico: 
+                          <a href="mailto:{paginaLocalizacion/correosElectrónicos/correoElectronicoPiePagina}">
+                            <xsl:value-of select="paginaLocalizacion/correosElectrónicos/correoElectronicoPiePagina"/>
+                          </a> <br />
+                          </p>
 
-<div id="localizacion">
-	<p>
-		
-		<iframe  width="680" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.476855108628!2d-3.3451889999999795!3d40.50895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424bfc76f087f1%3A0xced3a1e98249a30f!2sUAH+Campus+Cient%C3%ADfico-Tecnol%C3%B3gico+(Externo)!5e0!3m2!1ses!2ses!4v1428406958641"></iframe>
-	</p>
-	
-</div>
+        </div>
 
-<!-- ####################################################################################################### -->
-<hr width = "90%" color="#008F54"/>
+        <div id="localizacion">
+                <p>
+                    <iframe width="680" 
+                            height="450">
+                        <xsl:attribute name="src">
+                           <xsl:value-of select="paginaLocalizacion/iframeUrl/@url"/>
+                       </xsl:attribute>
+                   </iframe>
+                </p>
 
-<div id="leyenda1">
-	<h2>Vivero UAH</h2>
-		<ul>
-			<li><a href="../index.xml">Inicio</a></li>
-			<li><a href="productos.xml">Productos</a></li>
-			<li><a href="localizacion.xml">Dónde estamos</a></li>
-			<li><a href="contacto.xml">Contacto </a></li>
-		</ul>
-</div>
+        </div>
 
-<div id="leyenda2">
-	<h2>Contacto</h2>
-		<p class="last">UAH Campus Cientifico-tecnologico<br />
-			 Alcala de Henares, Madrid, 2883o<br />
-			 tel: +34 91 555 55 55<br />
-			 fax: +34 91 555 55 55<br />
-			 Correo electrónico: <a href="mailto:info@viverosUAH.com">info@viveroUAH.com</a><br />
-			 <iframe width="200" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.476855108628!2d-3.3451889999999795!3d40.50895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424bfc76f087f1%3A0xced3a1e98249a30f!2sUAH+Campus+Cient%C3%ADfico-Tecnol%C3%B3gico+(Externo)!5e0!3m2!1ses!2ses!4v1428406958641"></iframe>					 
-		</p> 
-</div>
-<!-- ####################################################################################################### -->
-</body>
-</html>
+        <!-- ####################################################################################################### -->
+        <hr class="clsHr"/>   
+
+        <div id="leyenda1">
+                <h2>Vivero UAH</h2>
+                        <ul>
+                                <li><a href="../index.xml">Inicio</a></li>
+                                <li><a href="productos.xml">Productos</a></li>
+                                <li><a href="localizacion.xml">Dónde estamos</a></li>
+                                <li><a href="contacto.xml">Contacto </a></li>
+                        </ul>
+        </div>
+
+        <div id="leyenda2">
+                <h2>Contacto</h2>
+                        <p class="last"><xsl:value-of select="paginaLocalizacion/dirección/nombreLugarPie"/><br />
+                                 <xsl:value-of select="paginaLocalizacion/dirección/sectorPie"/>, <xsl:value-of select="paginaLocalizacion/dirección/localidad"/>, <xsl:value-of select="paginaLocalizacion/dirección/códigoPostal"/><br />
+                                 tel: <xsl:value-of select="paginaLocalizacion/teléfono"/><br />
+                                 fax: <xsl:value-of select="paginaLocalizacion/fax"/><br />
+                                 Correo electrónico: <a href="mailto:{paginaLocalizacion/correosElectrónicos/correoElectronicoPiePagina}">
+                                    <xsl:value-of select="paginaLocalizacion/correosElectrónicos/correoElectronicoPiePagina"/>
+                                 </a><br />
+                                 <iframe width="200" 
+                                         height="250" 
+                                         frameborder="0" 
+                                         scrolling="no" 
+                                         marginheight="0" 
+                                         marginwidth="0">
+                                     <xsl:attribute name="src">
+                                        <xsl:value-of select="paginaLocalizacion/iframeUrl/@url"/>
+                                    </xsl:attribute>
+                                </iframe>
+                        </p> 
+        </div>
+        <!-- ####################################################################################################### -->
+        </body>
+        </html>
     </xsl:template>
-
 </xsl:stylesheet>

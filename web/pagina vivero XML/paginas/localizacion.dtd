@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DTD externo para el Trabajo Final de la Asignatura-->
+<!--- Entidad para el tipo PCDATA -->
+<!ENTITY  % pcd "(#PCDATA)">
+<!--- Entidad para el tipo CDATA -->
+<!ENTITY  % cd "CDATA">
+<!--- elemento principal -->
+<!ELEMENT paginaLocalizacion (imagenes,dirección,teléfono*,fax,correosElectrónicos,iframeUrl)>
+<!--- elementos de la rama imagenes -->
+<!ELEMENT  imagenes (imagenCabecera,imagenCarruse)>
+<!ELEMENT  imagenCabecera %pcd;>
+<!ATTLIST imagenCabecera
+     imagenUri %cd; #REQUIRED
+  >
+<!ELEMENT  imagenCarruse %pcd;>
+<!ATTLIST imagenCarruse
+     imagenUri %cd; #REQUIRED
+  >
+<!--- elementos de la rama dirección -->
+<!ELEMENT  dirección (nombreLugar,nombreLugarPie,calle,sector,sectorPie,localidad,códigoPostal,país)>
+<!ELEMENT  nombreLugar %pcd;>
+<!ELEMENT  nombreLugarPie %pcd;>
+<!ELEMENT  calle (nombre,número,referencia,referencia2)>
+<!ELEMENT  nombre %pcd;>
+<!ELEMENT  número %pcd;>
+<!ELEMENT  referencia %pcd;>
+<!ELEMENT  referencia2 %pcd;>
+<!ELEMENT  sector %pcd;>
+<!ELEMENT  sectorPie %pcd;>
+<!ELEMENT  localidad %pcd;>
+<!ELEMENT  códigoPostal %pcd;>
+<!ELEMENT  país %pcd;>
+
+<!--- elementos de la rama los elementos de Contacto -->
+<!ELEMENT  teléfono %pcd;>
+<!ELEMENT  fax %pcd;>
+<!ELEMENT  correosElectrónicos (correoElectronicoCentroPagina*,correoElectronicoPiePagina)>
+<!ELEMENT  correoElectronicoCentroPagina %pcd;>
+<!ELEMENT  correoElectronicoPiePagina %pcd;>
+<!ELEMENT  iframeUrl %pcd;>
+<!ATTLIST iframeUrl
+     url %cd; #REQUIRED
+  >
+
